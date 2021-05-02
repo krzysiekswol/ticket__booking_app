@@ -1,9 +1,51 @@
+body {
+  font-family: "Heebo", sans-serif;
+}
 .l-header {
+  width: 100%;
   height: 80px;
-  background-color: blue;
+  outline: 1px solid orange;
 }
 
-.brand__logo {
-  width: 100px;
-  height: 100px;
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  @include flex(row, space-between, center);
+  height: 80px;
+  position: relative;
+  .brand__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .nav__btn {
+    color: $color-base-green;
+  }
+  .nav__title {
+    @extend .nav__btn;
+    font-weight: bold;
+  }
+}
+
+.nav__block {
+  display: none;
+}
+.menu__active {
+  @include flex(column, space-evenly, start);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: $color-bgc-dark;
+  width: 100%;
+}
+.nav__item {
+  padding: 1rem;
+}
+.nav__link {
+  color: $color-light-green;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 300;
+  &:hover {
+    color: #fff;
+  }
 }
