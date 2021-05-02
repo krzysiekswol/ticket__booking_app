@@ -29,18 +29,6 @@ module.exports = {
             inject: true,
             chunks: ['index'],
             filename: 'index.html'}),
-        new HtmlWebpackPlugin({
-            template: './src/kontakt.html',
-            inject: true,
-            chunks: ['index'],
-            filename: 'kontakt.html'
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/overprint.html',
-            inject: true,
-            chunks: ['index'],
-            filename: 'overprint.html'
-        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
           filename: "[name].[hash].css"
@@ -62,10 +50,6 @@ module.exports = {
           ]
           }
         }),
-        //  new CopyWebpackPlugin([{
-        //   from: './src/assets/img',
-        //   to: './'
-        // }]),
         new PrettierPlugin(),
   ],
   
