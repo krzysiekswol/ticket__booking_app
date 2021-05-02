@@ -1,8 +1,9 @@
 import style from "./css/index.scss";
 
-import { navBtn, activeMenu } from "./js/module_nav";
-
-navBtn.addEventListener("click", activeMenu);
+import { activeMenu } from "./js/module_nav";
+import { slider } from "./js/module_slider";
+slider();
+activeMenu();
 
 // const slider = document.querySelector(".slider");
 // const dotOne = document.querySelector(".one");

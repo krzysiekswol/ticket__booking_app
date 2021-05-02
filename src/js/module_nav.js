@@ -1,5 +1,8 @@
 const navBtn = document.querySelector(".nav__btn");
+const menu = document.querySelector(".nav__block");
 const activeMenu = () => {
-  document.querySelector(".nav__block").classList.toggle("menu__active");
+  navBtn.addEventListener("click", () => {
+    menu.classList.toggle("menu__active");
+  });
 };
-export { navBtn, activeMenu };
+export { activeMenu };

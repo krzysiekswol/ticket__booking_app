@@ -1,5 +1,6 @@
 body {
-  font-family: "Heebo", sans-serif;
+  font-family: $font-standard;
+  box-sizing: border-box;
 }
 .l-header {
   width: 100%;
@@ -23,6 +24,7 @@ body {
   .nav__title {
     @extend .nav__btn;
     font-weight: bold;
+    font-size: 1.5rem;
   }
 }
 
@@ -36,6 +38,7 @@ body {
   left: 0;
   background-color: $color-bgc-dark;
   width: 100%;
+  z-index: 10;
 }
 .nav__item {
   padding: 1rem;
@@ -44,8 +47,63 @@ body {
   color: $color-light-green;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   &:hover {
     color: #fff;
+  }
+}
+.banner {
+  background-image: url("/src/assets/img/banner1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50%;
+  height: 0;
+  position: relative;
+  .banner__title {
+    position: absolute;
+    font-size: 2rem;
+    width: 100%;
+    top: 40%;
+    left: 10%;
+    color: #fff;
+    font-family: $font-handwritting;
+  }
+  .banner__dot {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 20%;
+    background-color: transparent;
+    transform: translateX(-50%);
+    // display: flex
+    @include flex(row, space-evenly, center);
+    .dot__item-one {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 4px solid $color-base-green;
+      background-color: #fff;
+    }
+    .dot__item-two,
+    .dot__item-three {
+      @extend .dot__item-one;
+    }
+  }
+  .banner__arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    .fa-chevron-left {
+      color: #fff;
+    }
+  }
+  .banner__arrow-right {
+    @extend .banner__arrow-left;
+    left: 94%;
+    .fa-chevron-right {
+      color: #fff;
+    }
   }
 }
