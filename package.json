@@ -1,5 +1,5 @@
 {
-  "name": "PROJEKT_STUDIA",
+  "name": "projekt_studia",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/krzysiekswol/AFM_webpack.git"
+    "url": "git+https://github.com/krzysiekswol/ticket__booking_app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/krzysiekswol/AFM_webpack/issues"
+    "url": "https://github.com/krzysiekswol/ticket__booking_app.git"
   },
   "homepage": "https://github.com/krzysiekswol/AFM_webpack#readme",
   "dependencies": {
