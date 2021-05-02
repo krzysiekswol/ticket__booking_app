@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/krzysiekswol/ticket__booking_app.git"
   },
-  "homepage": "https://github.com/krzysiekswol/AFM_webpack#readme",
+  "homepage": "https://github.com/krzysiekswol/titcket__booking_app.git#readme",
   "dependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
