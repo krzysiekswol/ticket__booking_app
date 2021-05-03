@@ -2,6 +2,7 @@ import style from "./css/index.scss";
 
 import { activeMenu } from "./js/module_nav";
 import { slider } from "./js/module_slider";
+import { larnacaWx, paphosWx } from "./js/module_wx";
 slider();
 activeMenu();
 

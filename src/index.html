@@ -53,6 +53,70 @@
         </div>
       </header>
       <main class="main">
+        <section class="booking">
+          <div class="l-booking">
+            <div class="departure-info__block">
+              <div class="departure-info__element">
+                <h3 class="departure-info__name">Larnaca</h3>
+                <p class="departure-info__temp--lca"></p>
+                <p class="wx__description--lca"></p>
+                <div class="departure-info__wx--lca"></div>
+              </div>
+              <div class="departure-info__element">
+                <h3 class="departure-info__name">Paphos</h3>
+                <p class="departure-info__temp--pfo"></p>
+                <p class="wx__description--pfo"></p>
+                <div class="departure-info__wx--pfo"></div>
+              </div>
+            </div>
+            <form action="" class="booking__form">
+              <div class="form__element">
+                <label for="departure">From</label>
+                <input
+                  list="departures"
+                  name="departure"
+                  id="departure"
+                  class="booking-select"
+                />
+                <datalist id="departures">
+                  <option value="PFO - Paphos"></option>
+                  <option value="LCA - Larnaca"></option>
+                </datalist>
+              </div>
+              <div class="form__element">
+                <label for="arrival">To</label>
+                <input
+                  list="arrivals"
+                  name="arrival"
+                  id="arrival"
+                  class="booking-select"
+                />
+                <datalist id="arrivals">
+                  <optgroup label="Europe">
+                    <option value="ATH - Athens International">
+                      Athens Int
+                    </option>
+                    <option value="fra">Frankfurt</option>
+                    <option value="lhr">London-Heathrow</option>
+                  </optgroup>
+                  <optgroup label="Intercontinental">
+                    <option value="jfk">New York - JFK</option>
+                    <option value="icn">Seul - Incheon</option>
+                  </optgroup>
+                </datalist>
+              </div>
+              <div class="form__element">
+                <label for="booking__date">Date</label>
+                <input
+                  type="date"
+                  name="booking__date"
+                  id="booking__date"
+                  class="booking-select"
+                />
+              </div>
+            </form>
+          </div>
+        </section>
         <section class="boxes"></section>
       </main>
       <footer class="footer"></footer>
